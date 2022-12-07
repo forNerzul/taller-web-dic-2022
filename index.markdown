@@ -39,9 +39,9 @@ layout: home
 Hola, penguins! 🐧 Mañana será día de workshop de Desarrollo Web, y estaremos trabajando con un montón de cosas nuevas. No se sientan abrumados que lo haremos paso a paso y juntos!
 Así también, queremos dejarles unos recursos para que vayan adentrándose.
 
--   [_Sobre desarrollo web moderno_:](https://youtu.be/heKnQG2ATqg)
--   [_Sobre Flask_:](https://openwebinars.net/blog/que-es-flask/)
--   [_Sobre HTML y desarrollo web_:](https://youtu.be/ni3LEc3kvas)
+-   [_Sobre desarrollo web moderno_](https://youtu.be/heKnQG2ATqg)
+-   [_Sobre Flask_](https://openwebinars.net/blog/que-es-flask/)
+-   [_Sobre HTML y desarrollo web_](https://youtu.be/ni3LEc3kvas)
 
 También, les pedimos si pueden instalar una extensión en Visual Studio Code que se llama _Prettier_. Lo pueden buscar dentro de VS Code en la pestaña de “extensiones” y luego buscan “Prettier”, también “Live server”.
 
@@ -77,7 +77,7 @@ Cualquier navegador (chrome o firefox, por ejemplo) usan HTTP para comunicarse c
 1. Crear una carpeta en su escritorio con el nombre taller-web.
 2. Acceder a su carpeta desde Visual Studio Code.
 3. Abrir la terminal para comenzar las instalaciones necesarias
-    > :bulb: **_OBS:_** para abrir la terminal tenemos que verificar en la esquina derecha que estemos en powershell,etc **(para el futuro se les puede pedir instalar git bash, por ahora nos adaptamos a lo que tengan)**
+    > 📔 **_OBS:_** para abrir la terminal tenemos que verificar en la esquina derecha que estemos en powershell,etc **(para el futuro se les puede pedir instalar git bash, por ahora nos adaptamos a lo que tengan)**
 4. Luego verificar que estemos dentro de nuestra carpeta. taller-web y luego escribir la instruccion para abrir la terminal.
 
     Ejemplo de como debe de verse:
@@ -94,7 +94,7 @@ Cualquier navegador (chrome o firefox, por ejemplo) usan HTTP para comunicarse c
 
     _Adicionales comando utiles:_
 
-    - Comando ls:
+    - Comando `ls`:
 
     ```console
     ls
@@ -102,7 +102,7 @@ Cualquier navegador (chrome o firefox, por ejemplo) usan HTTP para comunicarse c
 
     > Despliega los archivos que se encuentran en la carpeta
 
-    - Comando cls o clear:
+    - Comando `cls` o `clear`:
 
     ```console
     cls
@@ -114,7 +114,7 @@ Cualquier navegador (chrome o firefox, por ejemplo) usan HTTP para comunicarse c
 
     > Limpia la terminal
 
-    - Comando exit:
+    - Comando `exit`:
 
     ```console
     exit
@@ -122,7 +122,7 @@ Cualquier navegador (chrome o firefox, por ejemplo) usan HTTP para comunicarse c
 
     > Salir de la terminal
 
-    - Comando mkdir:
+    - Comando `mkdir`:
 
     ```console
     mkdir [nombre de la carpeta]
@@ -130,7 +130,7 @@ Cualquier navegador (chrome o firefox, por ejemplo) usan HTTP para comunicarse c
 
     > Para crear una carpeta
 
-    - Comando touch:
+    - Comando `touch`:
 
     ```console
     touch [nombre del archivo + extension]
@@ -158,7 +158,7 @@ Cualquier navegador (chrome o firefox, por ejemplo) usan HTTP para comunicarse c
     py -m venv venv
     ```
 
-    > **_OBS:_** De la siguiente linea que escribimos, `python -m venv [venv]` es el nombre que le asignamos a nuestro entorno virtual, puede ser otro pero por convencion se suele usar venv y asi lo usaremos y dentro de ella por defecto se crearan los archivos necesarios para el desarrollo web.
+    > 📔**_OBS:_** De la siguiente linea que escribimos, `python -m venv [venv]` es el nombre que le asignamos a nuestro entorno virtual, puede ser otro pero por convencion se suele usar venv y asi lo usaremos y dentro de ella por defecto se crearan los archivos necesarios para el desarrollo web.
     > **Comentario:** si no escribimos el nombre de la carpeta, por defecto se creara una carpeta con el nombre de venv ejemplo en este caso `python -m venv`
 
 ### Para que nos sirve un entorno virtual?
@@ -173,18 +173,39 @@ Jaz: Sin profundizar mucho, un entorno virtual es como una caja, en donde indica
 
 Como activar el entorno virtual, para ello vamos a escribir el siguiente comando:
 
-        Para UNIX/Mac/Linux ---> source venv/bin/activate ✅
-        Para Windows ---> .\venv\Scripts\activate --- o --- ./venv/Scripts/activate para hacer barra invertida se usa [Alt+92]
-        (no en todos pinta en colores, generalmente es solo texto blanco)
+-   Para UNIX/Mac/Linux:
+
+```console
+source venv/bin/activate
+```
+
+-   Para Windows:
+
+```console
+.\venv\Scripts\activate
+```
+
+> 📔**OBS:** para hacer barra invertida se usa [Alt+92]
 
 ### Desactivar entorno virtual
 
-Para desactivar darle deactivate ✅
-http://ingmmurillo.blogspot.com/2014/08/como-instalar-pip-y-virtualenv-para.html
+Comando `deactivate`:
+
+```console
+deactivate
+```
+
+> 📔**OBS:** Asegurarse de estar adentro de un venv antes de poder desactivar =)
+
+🍕[Mas info sobre entorno virtual en python](http://ingmmurillo.blogspot.com/2014/08/como-instalar-pip-y-virtualenv-para.html)
 
 ### Ejemplos de ERRORES:
 
 1. Windows error de scripts inabilitados:
+   Correr Powershell con permisos de administrador y ejecutar este comando:
+    ```powershell
+    Set-ExecutionPolicy -ExecutionPolicy Unrestricted
+    ```
     - correr powershell con permisos de administrador y ejecutar este comando:
     - --> Set-ExecutionPolicy -ExecutionPolicy Unrestricted
     - --> dar si a todo
